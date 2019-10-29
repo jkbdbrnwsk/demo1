@@ -1,0 +1,35 @@
+{
+  "name": "fe-demo1",
+  "version": "1.0.0",
+  "description": "A front-end demo project",
+  "scripts": {
+    "dev": "parcel src/index.pug --open",
+    "build": "parcel build src/index.pug --no-source-maps --public-url ."
+  },
+  "author": {
+    "name": "Jakub Dobranowski",
+    "email": "jakub@dobranowski.pl"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "parcel-plugin-structurize": "^1.1.5",
+    "pug": "^2.0.4",
+    "sass": "^1.23.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.4",
+    "bootstrap": "^4.3.1",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.4.1",
+    "jquery-bridget": "^2.0.1",
+    "jquery-validation": "^1.19.1",
+    "magnific-popup": "^1.1.0",
+    "modules": "^0.4.0",
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "parcel-plugin-structurize": false
+}

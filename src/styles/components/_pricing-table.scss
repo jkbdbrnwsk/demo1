@@ -1,0 +1,92 @@
+.pricing-table {
+  padding-top: rem(85px);
+  padding-bottom: rem(70px);
+
+  &__item {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+    margin-bottom: rem(30px);
+  }
+
+  &__item-head {
+    background-color: $pelorous;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(20px);
+
+    h3 {
+      font-size: rem(25px);
+      font-weight: $font-weight-bold;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: rem(15px);
+    }
+  }
+
+  &__cost {
+    border: 2px solid $white;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: rem(30px);
+      font-weight: $font-weight-bold;
+      line-height: 1.1;
+    }
+
+    span {
+      font-size: rem(12px);
+      letter-spacing: 0.24px;
+      line-height: $line-height-base;
+    }
+  }
+
+  &__item-body {
+    display: flex;
+    flex-direction: column;
+    padding: rem(40px) rem(30px) rem(20px);
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding-bottom: rem(10px);
+        color: $dark-gray;
+        font-weight: 400;
+        line-height: $line-height-base;
+        letter-spacing: 0.32px;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          background-image: url("../assets/svg/check.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin-right: rem(15px);
+        }
+      }
+      li.not-included::before {
+        background-image: url("../assets/svg/x.svg");
+      }
+    }
+
+    .btn {
+      margin-top: rem(25px);
+
+      @include media-breakpoint-up(lg) {
+        align-self: center;
+      }
+    }
+  }
+}

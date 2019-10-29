@@ -1,0 +1,143 @@
+.header-wrapper {
+  height: 80px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container {
+  @include media-breakpoint-down(md) {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+  }
+}
+
+.nav {
+  list-style-type: none;
+  font-size: rem(14px);
+  line-height: $line-height-base;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+  text-align: center;
+  background-color: $white;
+
+  li {
+    a {
+      color: #000;
+
+      &:hover,
+      &:active {
+        color: $pelorous;
+      }
+    }
+
+    a.active {
+      color: $pelorous !important;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    left: 0;
+    padding: rem(20px) 0;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+    font-size: rem(16px);
+
+    li {
+      margin: rem(10px) 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+
+    li {
+      margin: 0 rem(15px);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.toggle-nav {
+  width: 27px;
+  height: 20px;
+  display: flex;
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  padding: 0;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+  span,
+  &::before,
+  &::after {
+    content: "";
+    background: $pelorous;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 27px;
+    transition: all 0.4s cubic-bezier(0.49, 0.01, 0.49, 0.99);
+  }
+
+  span {
+    top: 10px;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: 20px;
+  }
+}
+
+.mobile-nav {
+  .toggle-nav {
+    span {
+      opacity: 0;
+    }
+    &::before {
+      background: $pelorous;
+      top: 10px;
+      transition: all 0.4s cubic-bezier(0.49, 0.01, 0.49, 0.99);
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      background: $pelorous;
+      top: 10px;
+      width: 27px;
+      transition: all 0.4s cubic-bezier(0.49, 0.01, 0.49, 0.99);
+      transform: rotate(-45deg);
+    }
+  }
+}

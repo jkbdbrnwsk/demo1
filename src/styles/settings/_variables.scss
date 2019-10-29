@@ -1,0 +1,44 @@
+// Functions
+$browser-context: 16px;
+
+@function rem($font-size-rem) {
+  @return ($font-size-rem / $browser-context) * 1rem;
+}
+
+// Fonts
+$primary-font-family: "Raleway", sans-serif;
+$secondary-font-family: "Poppins", sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-base: 1.7;
+
+// Colors
+$dark-gray: #333333;
+$gray: #454545;
+$light-gray: #666666;
+$pelorous: #32b4b6;
+$white: #fff;
+
+// Bootstrap container max widths
+$container-max-widths: (
+  xs: null,
+  sm: null,
+  md: null,
+  lg: null,
+  xl: 1200px
+);
+
+// Bootstrap grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1900px
+);

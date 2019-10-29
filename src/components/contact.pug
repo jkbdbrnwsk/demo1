@@ -1,0 +1,36 @@
+#contact.contact-wrapper.section
+  .contact.container
+    .row
+      .col-12.col-lg-5
+        .contact__details.vcard(itemscope='', itemtype='http://schema.org/LocalBusiness')
+          h3 Get in touch
+          .contact__details-item.adr(itemtype='http://schema.org/PostalAddress', itemscope='', itemprop='address')
+            svg.contact__icon
+              use(href='./assets/svg/solid.svg#map-marker-alt')
+            h4 Address
+            p
+              span.street-address(itemprop='streetAddress') Level 6, 23 pit st,
+              span.country-name(itemprop='countryName') UK
+          .contact__details-item
+            svg.contact__icon
+              use(href='./assets/svg/solid.svg#phone-alt')
+            h4 Phone
+            p.tel(itemprop='tel') +880254783216
+          .contact__details-item
+            svg.contact__icon
+              use(href='./assets/svg/solid.svg#paper-plane')
+            h4 Email
+            a.email(href='mailto:codertheme@gmail.com', itemprop='email') codertheme@gmail.com
+      .col-12.col-lg-7
+        form.contact__form
+          h3 Leave a message
+          .row
+            .col-12.col-md-6
+              input(type='text', name='name', placeholder='Your name', required='')
+            .col-12.col-md-6
+              input(type='email', name='email', placeholder='Your email', required='')
+            .col-12.col-md-12
+              input(type='text', name='subject', placeholder='Subject', required='')
+            .col-12.col-md-12
+              textarea(placeholder='Your message', rows='6', name='comment', required='')
+          button.btn.btn--size-large.btn--color-gray Send message

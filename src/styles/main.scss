@@ -1,0 +1,23 @@
+@import "settings/variables.scss";
+
+@import "vendor/normalize.scss";
+@import "vendor/bootstrap";
+@import "vendor/slick";
+@import "vendor/magnific";
+
+@import "common/elements.scss";
+@import "common/components.scss";
+@import "common/header.scss";
+@import "common/footer.scss";
+
+@import "components/hero.scss";
+@import "components/intro.scss";
+@import "components/service.scss";
+@import "components/gallery.scss";
+@import "components/pricing-table.scss";
+@import "components/testimonials.scss";
+@import "components/latest-blog.scss";
+@import "components/team.scss";
+@import "components/partners.scss";
+@import "components/cta.scss";
+@import "components/contact.scss";

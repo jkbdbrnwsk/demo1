@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: $browser-context;
+}
+
+body {
+  font-family: $primary-font-family;
+  font-size: 1rem;
+  font-weight: normal;
+  color: $light-gray;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  font-family: $secondary-font-family;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  font-size: rem(55px);
+  line-height: 0.9;
+  letter-spacing: 1.4px;
+  text-align: center;
+
+  span {
+    color: $pelorous;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(70px);
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: rem(40px);
+  font-weight: $font-weight-bold;
+  color: $gray;
+  line-height: 1.1;
+  letter-spacing: 0.8px;
+  margin-bottom: rem(80px);
+  position: relative;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid $pelorous;
+    width: 72.5px;
+    top: 100%;
+    margin-top: 12.5px;
+  }
+
+  &::before {
+    right: 50%;
+    margin-right: 9px;
+  }
+
+  &::after {
+    left: 50%;
+    margin-left: 9px;
+  }
+
+  span::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: $pelorous;
+    position: absolute;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -4px;
+  }
+}

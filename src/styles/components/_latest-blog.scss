@@ -1,0 +1,87 @@
+.latest-blog {
+  padding-top: rem(100px);
+  padding-bottom: rem(100px);
+
+  &__item:last-child {
+    margin-top: rem(50px);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    // @include media-breakpoint-up(lg) {
+    //   padding-left: rem(30px);
+    // }
+  }
+
+  h3 {
+    font-size: rem(24px);
+    font-weight: $font-weight-bold;
+    color: $light-gray;
+    line-height: 1.1;
+    letter-spacing: 0.48px;
+    margin-bottom: rem(10px);
+  }
+
+  img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: rem(30px);
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    color: $dark-gray;
+    font-weight: $font-weight-light;
+    line-height: $line-height-base;
+    letter-spacing: 0.32px;
+    margin-bottom: rem(25px);
+  }
+
+  &__meta {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: rem(10px) 0;
+
+    li {
+      display: flex;
+    }
+
+    li a {
+      font-size: rem(12px);
+      line-height: 2.25;
+      display: flex;
+      align-items: center;
+      margin-right: rem(20px);
+      color: $light-gray;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    svg {
+      width: 15px;
+      height: 15px;
+      margin-right: rem(10px);
+    }
+  }
+
+  .btn {
+    margin-top: auto;
+
+    @include media-breakpoint-up(md) {
+      align-self: center;
+    }
+    @include media-breakpoint-up(lg) {
+      align-self: start;
+    }
+  }
+}

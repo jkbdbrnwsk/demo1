@@ -1,0 +1,58 @@
+#gallery.gallery.section
+  h2
+    span Our gallery
+  .gallery__buttons.gallery__filters
+    button.gallery__button.is-checked(data-filter='*') All
+    button.gallery__button(data-filter='.web') Web
+    button.gallery__button(data-filter='.theme') Theme
+    button.gallery__button(data-filter='.design') Design
+    button.gallery__button(data-filter='.photography') Photography
+  .gallery-grid
+    a.gallery-grid__item.web(href='./assets/images/gallery-1.jpeg')
+      .gallery-grid__photo
+        img(src='./assets/images/gallery-1.jpeg', alt='Team member')
+        .photo-overlay
+          svg.photo-overlay__icon
+            use(href='./assets/svg/solid.svg#eye')
+    a.gallery-grid__item.theme(href='./assets/images/gallery-2.jpeg')
+      .gallery-grid__photo
+        img(src='./assets/images/gallery-2.jpeg', alt='Team member')
+        .photo-overlay
+          svg.photo-overlay__icon
+            use(href='./assets/svg/solid.svg#eye')
+    a.gallery-grid__item.web(href='./assets/images/gallery-3.jpeg')
+      .gallery-grid__photo
+        img(src='./assets/images/gallery-3.jpeg', alt='Team member')
+        .photo-overlay
+          svg.photo-overlay__icon
+            use(href='./assets/svg/solid.svg#eye')
+    a.gallery-grid__item.photography(href='./assets/images/gallery-4.jpeg')
+      .gallery-grid__photo
+        img(src='./assets/images/gallery-4.jpeg', alt='Team member')
+        .photo-overlay
+          svg.photo-overlay__icon
+            use(href='./assets/svg/solid.svg#eye')
+    a.gallery-grid__item.design(href='./assets/images/gallery-5.jpeg')
+      .gallery-grid__photo
+        img(src='./assets/images/gallery-5.jpeg', alt='Team member')
+        .photo-overlay
+          svg.photo-overlay__icon
+            use(href='./assets/svg/solid.svg#eye')
+    a.gallery-grid__item.design(href='./assets/images/gallery-6.jpeg')
+      .gallery-grid__photo
+        img(src='./assets/images/gallery-6.jpeg', alt='Team member')
+        .photo-overlay
+          svg.photo-overlay__icon
+            use(href='./assets/svg/solid.svg#eye')
+    a.gallery-grid__item.design(href='./assets/images/gallery-7.jpeg')
+      .gallery-grid__photo
+        img(src='./assets/images/gallery-7.jpeg', alt='Team member')
+        .photo-overlay
+          svg.photo-overlay__icon
+            use(href='./assets/svg/solid.svg#eye')
+    a.gallery-grid__item.theme(href='./assets/images/gallery-8.jpeg')
+      .gallery-grid__photo
+        img(src='./assets/images/gallery-8.jpeg', alt='Team member')
+        .photo-overlay
+          svg.photo-overlay__icon
+            use(href='./assets/svg/solid.svg#eye')

@@ -1,0 +1,56 @@
+.testimonials-wrapper {
+  background-image: url("../assets/images/section-bg.png");
+}
+
+.testimonials {
+  padding-top: rem(100px);
+  padding-bottom: rem(165px);
+
+  &__item {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(35px) rem(50px);
+  }
+
+  &__pic {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 2px solid $pelorous;
+  }
+
+  &__content {
+    color: $dark-gray;
+    font-size: rem(14px);
+    line-height: $line-height-base;
+    letter-spacing: 0.28px;
+    text-align: center;
+    margin-bottom: rem(30px);
+  }
+
+  &__author {
+    color: $gray;
+    font-size: rem(18px);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+    margin-top: rem(15px);
+  }
+
+  &__author-title {
+    font-size: rem(12px);
+    line-height: $line-height-base;
+    font-weight: $font-weight-light;
+  }
+
+  .slick-dots {
+    bottom: -70px;
+  }
+
+  .slick-dots li button::before {
+    border-radius: 0;
+  }
+}

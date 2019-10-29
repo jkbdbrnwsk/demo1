@@ -1,0 +1,62 @@
+.team-wrapper {
+  background-image: url("../assets/images/section-bg.png");
+}
+
+.team {
+  padding-top: rem(90px);
+  padding-bottom: rem(160px);
+
+  &__member-photo {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 290px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  &__personal {
+    background-color: $white;
+    border-bottom: 3px solid $pelorous;
+    transition: all 0.2s ease-in-out;
+    padding: rem(15px) rem(20px) rem(10px);
+
+    p {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &__member-name {
+    color: $gray;
+    font-size: rem(24px);
+    font-weight: $font-weight-bold;
+    line-height: 1.1;
+    letter-spacing: 0.48px;
+  }
+
+  &__member-title {
+    line-height: $line-height-base;
+    letter-spacing: 0.32px;
+    color: $light-gray;
+  }
+
+  &__member:hover > .team__personal {
+    background-color: $pelorous;
+    transition: all 0.2s ease-in-out;
+
+    p {
+      color: white;
+    }
+  }
+
+  &__member:hover .photo-overlay {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .slick-dots {
+    bottom: -60px;
+  }
+}

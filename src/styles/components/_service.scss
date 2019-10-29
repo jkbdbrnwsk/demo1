@@ -1,0 +1,84 @@
+.service-wrapper {
+  background-image: url("../assets/images/section-bg.png");
+}
+
+.service {
+  padding-top: rem(100px);
+  padding-bottom: rem(80px);
+
+  &__item {
+    background-color: $white;
+    border-radius: 60px 0;
+    height: 295px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(25px);
+    margin-bottom: rem(30px);
+
+    @include media-breakpoint-down(xs) {
+      height: 305px;
+    }
+
+    @include media-breakpoint-up(xs) {
+      padding: rem(30px);
+    }
+
+    &:hover {
+      border-radius: 0px 60px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover .service__icon {
+      border-color: $pelorous;
+      background-color: $pelorous;
+      transition: all 0.2s ease-in-out;
+
+      svg {
+        fill: white;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    h3 {
+      color: $gray;
+      font-size: rem(18px);
+      font-weight: $font-weight-bold;
+      line-height: $line-height-base;
+      letter-spacing: 0.36px;
+      margin-bottom: rem(5px);
+    }
+
+    p {
+      font-size: rem(14px);
+      font-weight: $font-weight-light;
+      line-height: $line-height-base;
+      letter-spacing: 0.7px;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $light-gray;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    margin-bottom: rem(10px);
+
+    svg {
+      fill: $light-gray;
+      width: 15px;
+      height: 15px;
+      margin: auto;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .btn {
+    align-self: center;
+    margin-top: auto;
+  }
+}
