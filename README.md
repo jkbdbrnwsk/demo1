@@ -1,6 +1,6 @@
 # Live demo
 
-http://dobranowski.pl/demo1
+https://demo1.jkbdbrnwsk.vercel.app/
 
 # Installation
 
